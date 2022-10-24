@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Domaći rad 3</title>
+  </head>
+  <body>
+    
+    <form>
+        <fieldset>
+            <legend>Unesite ime i prezime</legend>
+            <label for="ime">Ime:</label>
+            <input type="text" id="ime" name="ime" /><br />
+            <label for="prezime">Prezime</label>
+            <input type="prezime" id="prezime" name="prezime" /><br />
+            <input type="submit" value="Submit">
+    </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Odaberite omiljenu hranu:</legend>
+            <input type="radio" id="meso" name="meso" value="meso" />
+            <label for="meso">Meso</label><br />
+            <input type="radio" id="zelenjava" name="zelenjava" value="zelenjava" />
+            <label for="zelenjava">Zelenjava</label><br />
+            <input type="radio" id="nista" name="nista" value="nista" />
+            <label for="nista">Ništa ne jedem</label><br />
+            <input type="submit" value="Submit"></fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Unesite korisničko ime i lozinku</legend>
+            <p>Upozorenje: dijakritički znakovi nisu dozvoljeni!</p>
+            <label for="username">Korisničko ime:</label>
+            <input type="text" id="username" name="username"></br>
+            <label for="password">Lozinka:</label>
+            <input type="password" id="password" name="password"><br>
+            <input type="submit" value="Submit"></fieldset>
+    </form>
+    
+    <form>
+        <fieldset>
+            <legend>Vaša omiljena boja</legend>
+            <input type="checkbox" id="blue" name="blue" value="blue">
+            <label for="blue">Plava</label><br>
+            <input type="checkbox" id="red" name="red" value="red">
+            <label for="red">Crvena</label><br>
+            <input type="checkbox" id="green" name="green" value="green">
+            <label for="green">Zelena</label><br>
+            <input type="submit" value="Submit"></fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <label for="favcolor">Ponovo odaberite omiljenu boju ako ste se prethodno zeznuli:</label>
+            <input type="color" id="favcolor" name="favcolor"></br>
+            <input type="submit" value="Submit"></fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Odaberite vaš rođendan</legend>
+            <label for="birthday">Datum:</label>
+            <input type="date" id="birthday" name="birthday">
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Vrijeme je za unos emaila!</legend>
+            <label for="email">Vaš email:</label>
+            <input type="email" id="email" name="email">
+            <input type="submit" value="Pošalji"></br>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <label for="broj">Unesite omiljeni broj između 1 i 20:</label>
+            <input type="number" id="broj" value="broj" max="20" min="1">
+            <input type="submit" value="Pošalji">
+        <br></fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Kako se osjećate?</legend>
+            <input list="osjecaji">
+            <datalist id="osjecaji">
+                <option value="Dobro sam.">
+                <option value="Pa onako.">
+                <option value="Ajme meni.">
+                <option value="Ne diraj me.">
+            </datalist>
+            <input type="submit" value="Pošaljite osjećaje!">
+
+        </fieldset>
+    </form>
+  </body>
+</html>
