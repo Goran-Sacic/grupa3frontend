@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Domaca zadaca 4</title>
+  </head>
+  <body>
+    <canvas
+      id="rezultatUtakmice"
+      width="400"
+      height="100"
+      style="border: 1px solid black"
+    >
+    </canvas>
+    <script>
+      var canvas = document.getElementById("rezultatUtakmice");
+      var ctx = canvas.getContext("2d");
+      ctx.font = "30px Arial";
+      ctx.strokeText("Ajme 4:0 je bilo", 10, 50);
+    </script>
+  </body>
+</html>
