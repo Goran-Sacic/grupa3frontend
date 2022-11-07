@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vježba1</title>
+  </head>
+  <body>
+    <!-- Naslovi -->
+    <h1>Ovo je naslov 1.</h1>
+    <h2>Ovo je naslov 2.</h2>
+    <h3>Ovo je naslov 3.</h3>
+    <h4>Ovo je naslov 4.</h4>
+    <h5>Ovo je naslov 5.</h5>
+    <h6>Ovo je naslov 6.</h6>
+    <!-- Odlomci -->
+    <p>Ovo je odlomak teksta 1.</p>
+    <p style="font-family: Arial, Helvetica, sans-serif" background-color="red">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias saepe,
+      itaque dolorum repellendus quo dolore soluta voluptates! Atque esse rerum
+      repudiandae impedit iste veritatis assumenda odit, vel debitis, dolorum
+      nihil. <br />
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias maiores
+      adipisci ipsa quia sunt, qui ab. Aliquam molestiae est, reprehenderit sint
+      eum sit, voluptatibus incidunt velit id quo ullam minima! <br />
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi esse aut
+      alias iste rem ea quasi numquam! Cupiditate at minima perspiciatis natus
+      illum, error inventore sunt excepturi autem debitis laudantium! <br />
+    </p>
+    <p>Normalni paragraf bez fonta.</p>
+    <!-- Fieldset paragraf -->
+    <p>Fieldset paragraf:</p>
+    <fieldset
+      style="
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: aqua;
+        width: 300px;
+      "
+    >
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ut
+        modi nihil dolor vero illum? Quasi corrupti enim adipisci laudantium
+        eaque itaque quisquam nobis, sit distinctio id dolorem! Autem,
+        voluptatem!
+      </p>
+    </fieldset>
+    <!-- Unaprijed oblikovan tekst -->
+    <pre>AJmEf meNI nije mi dobro!!!!!                     sadas</pre>
+    <!-- Normalni paragraf za usporedbu -->
+    <p>AJmeee asd</p>
+    <!-- Pa opet unaprijed oblikovan tekst-->
+    <pre style="font-family: 'Courier New', Courier, monospace">
+ zz ZZ               DD</pre
+    >
+    <!-- Testiranje elemenata za označavanje teksta -->
+    <b>Boldano</b> <br />
+    <strong>Isto boldano</strong> <br />
+    <i>Italic</i><br />
+    <em>Em</em><br />
+    <mark style="background-color: yellowgreen">Mark</mark><br />
+    <small>mala slova</small><br />
+    <del>del</del><br />
+    <ins>ins</ins><br />
+    <sub>sub</sub> normalni tekst za usporedbu<br />
+    <sup>sup</sup> normalni tekst za usporedbu<br />
+    <!-- Liste -->
+    <ul>
+      <li>Prvi element liste</li>
+      <li>Drugi element liste</li>
+    </ul>
+    <ol>
+      <li>Prvi element liste</li>
+      <li>Drugi element liste</li>
+    </ol>
+    <dl>
+      <dt>Ajme!</dt>
+      <dd>Ajme 1</dd>
+      <dd>Ajme 2</dd>
+      <dd>Ajme 3</dd>
+      <dt>Bome!</dt>
+      <dd>Bome 1</dd>
+      <dd>Bome 2</dd>
+      <dd>Bome 3</dd>
+    </dl>
+    <fieldset style="width: 500px">
+      <legend>Slika Svemira</legend>
+      <img
+        style="width: 500px; height: 300px"
+        src="https://cdn.mos.cms.futurecdn.net/rwow8CCG3C3GrqHGiK8qcJ.jpg"
+        alt="Slika Svemira"
+      />
+    </fieldset>
+    <figure>
+      <img
+        src="https://cdn.mos.cms.futurecdn.net/xcLR5HMU2kxskdAy3ZVuTf.jpg"
+        alt="Slika Planete Zemlje"
+        style="width: 700px"
+        height="400px"
+      />
+      <figcaption>
+        Ovdje leži slika planete Zemlje. Planeta je plava.
+      </figcaption>
+    </figure>
+    <svg
+      height="200"
+      width="200"
+      style="border: 1px solid rgba(128, 16, 16, 0.479)"
+    >
+      <circle
+        cx="100"
+        cy="100"
+        r="97"
+        stroke="blue"
+        stroke-width="5"
+        fill="green"
+      />
+    </svg>
+    <br />
+    <!-- Zvučni sadržaj -->
+    <audio
+      id="player"
+      src="/00-moje/multimedia/Call of Duty_ Modern Warfare 2 (OST) - Official Main Menu Theme Music Song (FULL VERSION Soundtrack) (320kbps).mp3"
+      controls
+      title="CoD Muzika"
+    ></audio>
+    <div style="margin-left: 35px; background-color: blueviolet; width: 197px">
+      <button
+        onclick="document.getElementById('player').play()"
+        style="background-color: aqua"
+      >
+        Play
+      </button>
+      <button onclick="document.getElementById('player').pause()">Pause</button>
+      <button onclick="document.getElementById('player').volume += 0.05">
+        Vol +
+      </button>
+      <button onclick="document.getElementById('player').volume -= 0.05">
+        Vol -
+      </button>
+    </div>
+    <!-- Video sadržaj -->
+  </body>
+</html>

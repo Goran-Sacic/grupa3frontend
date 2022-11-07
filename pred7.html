@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predavanje 7: skimmanje HTML-a</title>
+    <style>
+      #kratica1 {
+        position: relative;
+      }
+    </style>
+
+    <script>
+      var stvoren = false;
+      var prikazan = false;
+      function prikazi(event) {
+        if (!stvoren) {
+          console.log("pozvana sam");
+          var tag = document.createElement("span");
+          tag.innerHTML = "Svjetska zdravstvena organizacija";
+          tag.setAttribute("id", "objasnjenje");
+          tag.style.position = "absolute";
+          tag.style.width = "100vw";
+          tag.style.top = "-40px";
+          event.target.appendChild(tag);
+          stvoren = true;
+          prikazan = true;
+        } else if (!prikazan) {
+          document.getElementById("objasnjenje").style.diplay = "block";
+          prikazan = true;
+        }
+      }
+      function sakrij(event) {
+        if (stvoren) {
+          document.getElementById("objasnjenje").style.diplay = "none";
+          prikazan = false;
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Početak predavanja</h1>
+    <p><abbr title="Najbolji čovjek xD">Goran</abbr> sam ja.</p>
+
+    <p>
+      The
+      <span
+        onmouseleave="sakrij(event)"
+        onmouseenter="prikazi(event)"
+        id="kratica1"
+        >WHO</span
+      >
+      was founded in 1948.
+    </p>
+    <p>
+      Marking up abbreviations can give useful information to browsers,
+      translation systems and search-engines.
+    </p>
+  </body>
+</html>
