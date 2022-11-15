@@ -1,0 +1,48 @@
+h1 {
+    color:red;
+}
+
+.zeleni-tekst {
+    color: green;
+    background-color: red;
+}
+
+#plavi-tekst {
+    color: blue;
+}
+
+#plavi-tekst2 {
+    color: blue;
+}
+
+h2:hover {
+    font-size: 50px;
+}
+
+li:hover {
+    color:purple;
+}
+
+a:visited {
+    background-color: maroon;
+}
+
+p:first-child {
+    color:darkorange;
+}
+
+p:last-child {
+    color: springgreen;
+}
+
+p:nth-child(5) {
+    color:violet;
+}
+
+/* bla bla komentar u CSS-u */
+
+p:first-of-type
+{
+    color: brown;
+}
+
