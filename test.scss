@@ -1,0 +1,61 @@
+@import "./base/colors";
+@import "./abstracts/mixins";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/blur-clean.jpg);
+    background-position: center center;
+    width: 100vw;
+    background-repeat: no-repeat;
+}
+
+.border {
+    border: 2px solid white;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around; 
+    
+    .flex-item1 {
+    width: 300px;
+    height: 100px;
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
+    line-height: 100px;
+    align-content: space-around;
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+    background-color: $boja1;
+    }
+    
+    .flex-item2 {
+    width: 300px;
+    height: 100px;
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
+    line-height: 100px;
+    align-content: space-around;
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+    background-color: $boja2;
+    }
+    
+    .flex-item3 {
+    width: 300px;
+    height: 100px;
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
+    line-height: 100px;
+    align-content: space-around;
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+    background-color: $boja3;
+    } 
+}
