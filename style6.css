@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    box-sizing:border-box;
+}
+
+.container {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.item {
+    border: 2px dashed blue; 
+    width: 20%;
+    height: 100px;
+    background-color: brown;
+    text-align: center;
+    margin: calc(1px + 2%);
+    line-height: 100px;
+}

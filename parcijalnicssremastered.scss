@@ -1,0 +1,43 @@
+@import "./abstracts/mixinszaparcijalniremastered";
+@import "./base/resetzaremaster";
+@import "./base/colorszaremaster";
+
+@keyframes slide-down {
+    0% {
+        top: -80vh;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+body {
+    background: lightblue url(./images/blur-clean.jpg) no-repeat center center/cover;
+}
+
+.wrapper {
+    @include flex-container;
+    div {
+        flex-basis: 20%;
+        font-size: 5vw;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: 2px solid rgb(255, 255, 255);
+        position: relative;
+        padding: 5%;
+        top: -80vh;
+        color: white;
+        &:first-child {
+            background-color: $color1;
+            animation: slide-down 1.5s linear 1.5s forwards;
+        }
+        &:nth-child(2) {
+            background-color: $color2;
+            animation: slide-down 1.5s linear 3s forwards;
+        }
+        &:last-child {
+            background-color: $color3;
+            animation: slide-down 1.5s linear 4.5s forwards;
+        }
+    }
+}

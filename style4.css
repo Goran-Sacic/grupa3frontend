@@ -1,0 +1,18 @@
+.box
+{
+    width: 250px;
+    height: 250px;
+    margin:auto;
+    background-color: aqua;
+}
+
+.p-center
+{ 
+margin: auto;
+text-align: justify;
+padding-top:60px;
+color: blue;
+font-size: 15px;
+font-weight: bold;
+}
+

@@ -1,0 +1,133 @@
+.div1 {
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: orangered;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@keyframes animacija1 {
+    0% {
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    background-color: orangered;
+    top: 10px;
+    }
+    50% {
+    width: 50px;
+    height: 200px;
+    background-color: silver;
+    top: 200px;
+    }
+    100% {
+    width: 400px;
+    height: 100px;
+    background-color: orangered; 
+    top: 10px;
+    }
+
+}
+
+div:first-of-type {
+    animation: animacija1 5s ease-in-out infinite;
+}
+
+.dizajn {
+    width: 400px;
+    height: 100px;
+    background-color: orange;
+    border-radius: 0%;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    top: 500px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.dizajn:hover {
+    background-color: blue;
+    border-radius: 25px;
+    color: lightblue;
+}
+
+.dizajn:active {
+    background-color: red;
+    border-radius: 25px;
+    color: white;
+}
+
+.kvadrat {
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    border: 5px solid white;
+    text-align: center;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 500px;
+    color: lightblue;
+    line-height: 150px;
+}
+
+@keyframes gornjiborder {
+    0% {
+        border-top-color: white;
+    }
+    100% {
+        border-top-color: blue;
+    }
+}
+@keyframes desniborder {
+    0% {
+        border-right-color: white;
+    }
+    100% {
+        border-right-color: blue;
+    }
+}
+@keyframes donjiborder {
+    0% {
+        border-bottom-color: white;
+    }
+    100% {
+        border-bottom-color: blue;
+    }
+}
+@keyframes lijeviborder {
+    0% {
+        border-left-color: white;
+    }
+    100% {
+        border-left-color: blue;
+    }
+}
+
+@keyframes textfade {
+    0% {
+        color: lightblue;
+    }
+    50% {
+        color: red;
+    }
+    100% {
+        color: lightblue;
+    }
+}
+
+.kvadrat {
+    animation-name: gornjiborder, desniborder, donjiborder, lijeviborder, textfade;
+    animation-duration: 1s, 1s, 1s, 1s, 2s;
+    animation-delay: 1s, 2s, 3s, 4s, 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1, 1, 1, 1, infinite;
+    animation-fill-mode: forwards;
+}

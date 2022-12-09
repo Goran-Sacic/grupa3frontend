@@ -1,0 +1,44 @@
+$itemHeight: 30px;
+
+@mixin flex-cont($direction){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: space-around;
+}
+
+@mixin flex-item {
+    &>div {
+        width: 100px;
+        height: $itemHeight;
+        text-align: center;
+        line-height: $itemHeight;
+        background-color: green;
+        @extend .borders;
+        color: white;
+    }
+    
+    :nth-child(3) {
+        order: 1;
+    }
+}
+
+.borders {
+    border: 2px solid red;
+}
+
+h1 {
+    font-size: x-large;
+    color: red;
+}
+
+.main-div {
+    @include flex-cont(row-reverse);
+    @extend .borders;
+    @include flex-item();
+}
+
+.second-div {
+    @include flex-cont(row);
+    @extend .borders;
+    @include flex-item();
+}

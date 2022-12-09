@@ -63,7 +63,7 @@ body {
   margin: 20px;
   display: inline-block;
   position: relative;
-  background-color: rgba(175, 0, 108, 0.705);
+  background-color: rgba(167, 0, 0, 0.705);
   color: white;
   -webkit-animation: animacija1 1.5 ease-in-out 3s forwards;
           animation: animacija1 1.5 ease-in-out 3s forwards;
@@ -78,7 +78,7 @@ body {
   margin: 20px;
   display: inline-block;
   position: relative;
-  background-color: rgba(230, 158, 2, 0.705);
+  background-color: rgba(202, 152, 44, 0.705);
   color: white;
   -webkit-animation: animacija1 1.5 ease-in-out 4.5s forwards;
           animation: animacija1 1.5 ease-in-out 4.5s forwards;

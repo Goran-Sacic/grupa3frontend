@@ -1,0 +1,29 @@
+.borders {
+  border: 2px solid black;
+}
+
+.main-div {
+  background-color: rgb(82, 80, 80);
+  margin: auto;
+  text-align: auto;
+  width: 900px;
+}
+
+a {
+  display: inline-block;
+  margin: center;
+  text-align: center;
+  background: red;
+  padding: 10px;
+  width: 200px;
+}
+a:hover {
+  background: rgb(218, 214, 214);
+}
+
+.main-div li {
+  display: inline;
+}
+.main-div p {
+  display: inline;
+}/*# sourceMappingURL=styledz5.css.map */

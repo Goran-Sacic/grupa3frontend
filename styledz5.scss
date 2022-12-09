@@ -1,0 +1,44 @@
+$bg-color1: rgb(82, 80, 80);
+$bg-color2: rgb(218, 214, 214);
+$flex-color: red;
+$flex-hover: rgb(218, 214, 214);
+$flex-text: white;
+$flex-active: orange;
+
+.borders {
+    border: 2px solid black;
+}
+
+@mixin flex-cont{
+    display: flex;
+    position: relative;
+    margin: auto;
+}
+
+.main-div {
+    background-color: $bg-color1;
+    margin: auto;
+    text-align: auto;
+    width: 900px;
+}
+
+a {
+    display: inline-block;
+    margin: center;
+    text-align: center;
+    background: $flex-color;
+    padding: 10px;
+    width: 200px;
+    &:hover{
+        background: $flex-hover;
+    }
+}
+
+.main-div {
+    li {
+        display: inline;
+    }
+    p {
+        display: inline;
+    }
+}

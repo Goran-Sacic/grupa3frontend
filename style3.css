@@ -1,0 +1,36 @@
+h1 {
+    text-decoration: underline double blue;
+    font-style: italic;
+    text-transform:lowercase;
+    font-variant:small-caps;
+    text-shadow: 5px 5px 1px rgba(0, 138, 46, 0.7);
+}
+
+p {
+    background-color: rgb(0, 238, 255);
+}
+
+body {
+    background-image: url(./pozadina.jpeg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-attachment: scroll;
+    background-size: contain;
+    /* background: blue url(./pozadina.jpeg) center center / contain no-repeat; */
+}
+
+p:first-of-type {
+    border-style: dashed;
+    border-bottom-style: dotted;
+    border-color: darkblue;
+    border-width: 10px 35px 35px 10px;
+}
+
+button {
+    border-style: dashed;
+    border-color: brown;
+    border-radius: 25%;
+    border-width: 10px;
+    width: 75px;
+    height: 75px;
+}

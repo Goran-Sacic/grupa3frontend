@@ -1,0 +1,42 @@
+.borders, .second-div > div, .second-div, .main-div > div, .main-div {
+  border: 2px solid red;
+}
+
+h1 {
+  font-size: x-large;
+  color: red;
+}
+
+.main-div {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+.main-div > div {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: green;
+  color: white;
+}
+.main-div :nth-child(3) {
+  order: 1;
+}
+
+.second-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.second-div > div {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: green;
+  color: white;
+}
+.second-div :nth-child(3) {
+  order: 1;
+}/*# sourceMappingURL=style9.css.map */

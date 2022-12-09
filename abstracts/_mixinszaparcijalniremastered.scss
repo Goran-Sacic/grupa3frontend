@@ -1,0 +1,9 @@
+@mixin flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row; /*ovo ne treba dodati, ali je za potrebe remastera tu*/
+    flex-wrap: nowrap; /*ovo ne treba dodati, ali je za potrebe remastera tu*/
+}

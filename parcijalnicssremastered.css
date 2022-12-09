@@ -1,0 +1,74 @@
+html {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@-webkit-keyframes slide-down {
+  0% {
+    top: -80vh;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    top: -80vh;
+  }
+  100% {
+    top: 0;
+  }
+}
+body {
+  background: lightblue url(./images/blur-clean.jpg) no-repeat center center/cover;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: row; /*ovo ne treba dodati, ali je za potrebe remastera tu*/
+  flex-wrap: nowrap; /*ovo ne treba dodati, ali je za potrebe remastera tu*/
+}
+.wrapper div {
+  flex-basis: 20%;
+  font-size: 5vw;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 2px solid rgb(255, 255, 255);
+  position: relative;
+  padding: 5%;
+  top: -80vh;
+  color: white;
+}
+.wrapper div:first-child {
+  background-color: rgba(128, 128, 128, 0.7);
+  -webkit-animation: slide-down 1.5s linear 1.5s forwards;
+          animation: slide-down 1.5s linear 1.5s forwards;
+}
+.wrapper div:nth-child(2) {
+  background-color: rgba(255, 0, 0, 0.7);
+  -webkit-animation: slide-down 1.5s linear 3s forwards;
+          animation: slide-down 1.5s linear 3s forwards;
+}
+.wrapper div:last-child {
+  background-color: rgba(255, 166, 0, 0.7);
+  -webkit-animation: slide-down 1.5s linear 4.5s forwards;
+          animation: slide-down 1.5s linear 4.5s forwards;
+}/*# sourceMappingURL=parcijalnicssremastered.css.map */
